@@ -5,7 +5,7 @@
 using namespace std ;
 
 //making the dice
-int dice(){//Dice for the 1st Player
+int dice(){
 //fixed the bug where the dice value could be zero
 srand(time(0));
   int dice = (rand() % 6) +1 ;
@@ -34,12 +34,12 @@ int main(void){
   player1 = &platForm[0] ;  
   player2 = &platForm2[0] ;
 
-//protyping 
+ //start-phase
   string roll ;
   
     do{ cout<<"Enter 1 to Start playing or enter 0 to exit..."<<endl;
         cin>>roll ;
-      if(roll == "1"){cout<<"///////////////////\nLet the gemez begin...\n"<<endl;
+      if(roll == "1"){cout<<"///////////////////\nGame Started......\n"<<endl;
   for( int i = 0 ; i < 99 ; i++) {
 //player1's turn  
     cout<<"Player1's Turn.."<<endl;
